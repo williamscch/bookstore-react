@@ -1,4 +1,4 @@
-# To-Do-List React APP
+# Bookstore React APP
 
 > A simple to-do list to help you organize your daily tasks.
 
