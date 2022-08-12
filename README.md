@@ -1,8 +1,18 @@
-# To-Do-List React APP
+# Bookstore React APP
 
-> A simple to-do list to help you organize your daily tasks.
+> The Bookstore is a website built with React and Redux. This web app will allows you to:
+
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Live Demo
+
+- Will be able soon.
+
+[Press here to see the Bookstore live]()
 
 ## Available Scripts
 
@@ -43,7 +53,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## 👤 Author
 
-- GitHub: [@wdavidcch](https://github.com/wdavidcch)
+- GitHub: [@williamscch](https://github.com/williamscch)
 - Twitter: [@wdavidcch](https://twitter.com/wdavidcch)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/williams-colmenares-989a6b151)
 
@@ -60,8 +70,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse Module 3 React and Redux
-- Project indications [here](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/exercises/react_tutorial.md)
-- This project was made following the [React Tutorial From Scratch: A Step-by-Step Guide (2021)](https://ibaslogic.com/react-tutorial-for-beginners/)
+- Project indications [here](https://github.com/microverseinc/curriculum-react-redux/blob/main/bookstore/sneak_peek_v2_0.md)
+- Design based on a Microverse's Zepling project
 
 ## 📝 License
 

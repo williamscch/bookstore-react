@@ -1,29 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Categories from './components/Categories';
+import BooksPage from './components/BooksPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// eslint-disable-next-line react/prefer-stateless-function
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<BooksPage />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </>
+    );
+  }
 }
 
 export default App;
