@@ -1,22 +1,20 @@
 import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import Navigation from './components/Navigation';
 import Categories from './components/Categories';
 import BooksPage from './components/BooksPage';
-// import { store } from './redux/books/books';
+import store from './redux/configureStore';
 
 const App = () => (
-  // <Provider store={store}>
-  <>
+  <Provider store={store}>
     <Navigation />
     <Routes>
       <Route path="/" element={<BooksPage />} />
       <Route path="/categories" element={<Categories />} />
     </Routes>
-  </>
-  // </Provider>
+  </Provider>
 );
 
 export default App;
