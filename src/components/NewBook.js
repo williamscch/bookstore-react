@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { actionNewBook } from '../redux/books/books';
+import { actionNewBook, actionGetBooks } from '../redux/books/books';
 
 const NewBook = () => {
   const dispatch = useDispatch();
@@ -17,14 +17,16 @@ const NewBook = () => {
   };
   return (
     <form
-      onSubmit={(e) => {
-        dispatch(
+      onSubmit={async (e) => {
+        await dispatch(
           actionNewBook({
             title: bookTitle,
             author: bookAuthor,
-            id: uuidv4(),
+            item_id: uuidv4(),
+            category: 'hardcoded',
           }),
         );
+        dispatch(actionGetBooks);
         e.preventDefault();
         setBookTitle('');
         setBookAuthor('');
