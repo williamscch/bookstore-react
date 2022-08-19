@@ -6,15 +6,19 @@
   text-decoration: none;
 }
 
-body {  
-  background-color:#d2eaf1;
+:root {
+  --number: 1;
+}
+
+body {
+  background-color: #d2eaf1;
   background-image: url("./cardboard-flat.png");
   background-position: cover;
 }
 
 nav {
   display: flex;
-  background-color:#ffff;
+  background-color: #ffff;
   background-image: url("./45-degree-fabric-light.png");
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -38,7 +42,6 @@ nav {
   font-size: 1.1rem;
 }
 
-
 .book-list {
   background-color: #ffffff;
   background-image: url("./45-degree-fabric-light.png");
@@ -46,7 +49,138 @@ nav {
   width: 90%;
   margin: auto;
   min-height: 70vh;
+  max-height: 70vh;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 3rem;
+}
+
+.book {
+  background-color: #ffffff;
+  background-image: url("./cardboard-flat.png");
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 45% 27% 27%;
+  min-height: 7rem;
+  padding: 0 1rem;
+  align-content: center;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.category {
+  color: #97b3cb;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.author {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: rgba(2, 145, 255, 0.555);
+}
+
+.book-buttons {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: rgb(2, 144, 255);
+  cursor: pointer;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.progress {
+  position: relative;
+  margin-left: auto;
+}
+
+.outer {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 15px;
+}
+
+.inner {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+circle {
+  fill: none;
+  stroke: rgb(2, 144, 255);
+  stroke-width: 15px;
+  stroke-dasharray: 219;
+  stroke-dashoffset: 219;
+  animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 77;
+  }
+}
+
+.progress svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.number-progress {
+  margin: 0.6rem;
+}
+
+.chapter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.chapter h5 {
+  font-weight: 200;
+}
+
+.chapter h4 {
+  font-weight: 400;
+}
+
+.chapter button {
+  font-size: 0.7rem;
+  border-radius: 4px;
+  height: 2rem;
+  background-color: rgb(2, 144, 255);
+  border: none;
+  color: #ffff;
+  width: 10rem;
 }
 
 form {
@@ -60,8 +194,38 @@ form {
   min-height: 10vh;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 form h2 {
   color: #97b3cb;
+}
+
+form input {
+  border-radius: 4px;
+  height: 2rem;
+  width: 15rem;
+  font-size: 1rem;
+}
+
+form input::placeholder {
+  padding: 3px;
+}
+
+form button {
+  border-radius: 4px;
+  height: 2rem;
+  background-color: rgb(2, 144, 255);
+  border: none;
+  color: #ffff;
+  width: 8rem;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  background-color: rgb(9, 97, 165);
+}
+
+form button:active {
+  transform: scale(0.9);
 }
