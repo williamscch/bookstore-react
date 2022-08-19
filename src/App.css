@@ -1,39 +1,67 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {  
+  background-color:#d2eaf1;
+  background-image: url("./cardboard-flat.png");
+  background-position: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  background-color:#ffff;
+  background-image: url("./45-degree-fabric-light.png");
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(121, 121, 121, 0.596);
+  width: 90%;
+  margin: auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0.5rem;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.link {
+  color: #121212;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.link:hover {
+  text-decoration: underline;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.link:active {
+  font-size: 1.1rem;
+}
+
+
+.book-list {
+  background-color: #ffffff;
+  background-image: url("./45-degree-fabric-light.png");
+  box-shadow: 0 0 10px 5px rgba(121, 121, 121, 0.596);
+  width: 90%;
+  margin: auto;
+  min-height: 70vh;
+  overflow-y: auto;
+}
+
+form {
+  background-color: #ffffff;
+  background-image: url("./45-degree-fabric-light.png");
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(121, 121, 121, 0.596);
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+form h2 {
+  color: #97b3cb;
 }
