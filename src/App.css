@@ -13,7 +13,6 @@
 body {
   background-color: #d2eaf1;
   background-image: url("./cardboard-flat.png");
-  background-position: cover;
 }
 
 nav {
@@ -43,7 +42,7 @@ nav {
 }
 
 .book-list {
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: url("./45-degree-fabric-light.png");
   box-shadow: 0 0 10px 5px rgba(121, 121, 121, 0.596);
   width: 90%;
@@ -58,7 +57,7 @@ nav {
 }
 
 .book {
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: url("./cardboard-flat.png");
   border-radius: 5px;
   display: grid;
@@ -118,7 +117,8 @@ nav {
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+  box-shadow:
+    6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
   padding: 15px;
 }
@@ -127,10 +127,12 @@ nav {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+  box-shadow:
+    inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
     inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    -0.5px -0.5px 0 rgba(255, 255, 255, 1),
+    0.5px 0.5px 0 rgba(0, 0, 0, 0.15),
+    0 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
 circle {
@@ -184,7 +186,7 @@ circle {
 }
 
 form {
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: url("./45-degree-fabric-light.png");
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -212,7 +214,7 @@ form input::placeholder {
   padding: 3px;
 }
 
-form button {
+.form-button {
   border-radius: 4px;
   height: 2rem;
   background-color: rgb(2, 144, 255);

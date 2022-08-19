@@ -51,7 +51,7 @@ const NewBook = () => {
         required
         maxLength={40}
       />
-      <button type="submit">Add Book</button>
+      <button className="form-button" type="submit">Add Book</button>
     </form>
   );
 };
