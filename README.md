@@ -5,14 +5,16 @@
 - Display a list of books.
 - Add a book.
 - Remove a selected book.
+- View and update your progress reading the book
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Quick view
+> ![](src/bookstore-react-screenshoot.png)
+
 ## Live Demo
 
-- Will be able soon.
-
-[Press here to see the Bookstore live]()
+[Press here to see the Bookstore live](https://app.netlify.com/sites/bookstorewilliamscch/settings/domain)
 
 ## Available Scripts
 
@@ -69,9 +71,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse Module 3 React and Redux
-- Project indications [here](https://github.com/microverseinc/curriculum-react-redux/blob/main/bookstore/sneak_peek_v2_0.md)
-- Design based on a Microverse's Zepling project
+- Microverse Module 3 React and Redux.
+- Project indications [here](https://github.com/microverseinc/curriculum-react-redux/blob/main/bookstore/sneak_peek_v2_0.md).
+- Design based on a Microverse's Zepling project.
 
 ## 📝 License
 
