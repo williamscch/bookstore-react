@@ -23,7 +23,7 @@ const NewBook = () => {
             title: bookTitle,
             author: bookAuthor,
             item_id: uuidv4(),
-            category: 'hardcoded',
+            category: 'Fantasy',
           }),
         );
         dispatch(actionGetBooks);
@@ -32,14 +32,15 @@ const NewBook = () => {
         setBookAuthor('');
       }}
     >
+      <h2> Add a New Book Here!</h2>
       <input
         value={bookTitle}
         onChange={handleChangeTitle}
         type="text"
-        placeholder="Add New Book..."
+        placeholder="Book's Name..."
         name="title"
         required
-        maxLength={15}
+        maxLength={40}
       />
       <input
         value={bookAuthor}
@@ -48,9 +49,9 @@ const NewBook = () => {
         placeholder="Book's Author..."
         name="author"
         required
-        maxLength={15}
+        maxLength={40}
       />
-      <button type="submit">Add New Book</button>
+      <button className="form-button" type="submit">Add Book</button>
     </form>
   );
 };

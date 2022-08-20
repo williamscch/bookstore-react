@@ -10,7 +10,7 @@ const BooksList = () => {
     dispatch(actionGetBooks());
   }, []);
   return (
-    <ul>
+    <ul className="book-list">
       {reduxStateBooks.map((book) => (
         <Book
           key={book.item_id}
