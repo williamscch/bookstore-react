@@ -14,7 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-[Press here to see the Bookstore live](https://app.netlify.com/sites/bookstorewilliamscch/settings/domain)
+[Press here to see the Bookstore live](https://bookstorewilliamscch.netlify.app/)
 
 ## Available Scripts
 
